@@ -47,13 +47,13 @@ Run the following command to clone the repository:
 
 
 
-Install Dependencies
+
 Change into the backend directory:
 
 cd sleeping-tracker/backend
 Install the project dependencies:
-
 npm install
+
 Configure Environment Variables
 Rename the .env.example file to .env:
 
@@ -64,10 +64,10 @@ Replace postgres://username:password@localhost:5432/sleep_tracker_db with your P
 
 Run Database Migrations
 Run the database migrations to set up the database schema:
-
 npm run migrate
+
 Start the Backend Server
-npm start
+node index
 
 The backend should now be running on http://localhost:8080/api/sleep-records.
 Test the API Endpoints
