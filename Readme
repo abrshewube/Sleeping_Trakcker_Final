@@ -1,0 +1,74 @@
+Sleeping Tracker App
+This is the repository for the Sleeping Tracker app, a web application to track your sleep duration and daily ratings.
+
+Frontend Setup
+Follow these steps to run the frontend of the Sleeping Tracker app on your local machine:
+
+Prerequisites
+Node.js: Make sure you have Node.js installed on your machine. You can download it from the official website: https://nodejs.org/
+Clone the Repository
+Open a terminal or command prompt on your local machine.
+
+Run the following command to clone the repository:
+
+
+git clone Sleeping_Tracker_Final.git
+Install Dependencies
+Change into the frontend directory:
+
+cd sleeping-tracker/frontend
+Install the project dependencies:
+
+npm install
+
+
+Run the Development Server
+Start the development server:
+
+
+npm run dev
+The frontend should now be running on http://localhost:3000.
+Access the App
+Open your web browser and navigate to http://localhost:3000 to access the Sleeping Tracker app.
+
+Backend Setup
+
+Follow these steps to run the backend of the Sleeping Tracker app on your local machine:
+
+Prerequisites
+Node.js: Make sure you have Node.js installed on your machine. You can download it from the official website: https://nodejs.org/
+
+PostgreSQL: Install PostgreSQL on your machine and create a database for the app. You can download PostgreSQL from: https://www.postgresql.org/
+
+Clone the Repository
+Open a terminal or command prompt on your local machine.
+
+Run the following command to clone the repository:
+
+
+
+Install Dependencies
+Change into the backend directory:
+
+cd sleeping-tracker/backend
+Install the project dependencies:
+
+npm install
+Configure Environment Variables
+Rename the .env.example file to .env:
+
+Open the .env file in a text editor and set the environment variables according to your local configuration. For example:
+
+DATABASE_URL=postgres://username:password@localhost:5432/sleep_tracker_db
+Replace postgres://username:password@localhost:5432/sleep_tracker_db with your PostgreSQL database connection URL.
+
+Run Database Migrations
+Run the database migrations to set up the database schema:
+
+npm run migrate
+Start the Backend Server
+npm start
+
+The backend should now be running on http://localhost:8080/api/sleep-records.
+Test the API Endpoints
+You can use tools like Postman or curl to test the API endpoints. For example, to get all sleep records, send a GET request to http://localhost:8080/api/sleep-records..
