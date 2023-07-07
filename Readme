@@ -55,7 +55,7 @@ Install the project dependencies:
 npm install
 
 Configure Environment Variables
-Rename the .env.example file to .env:
+
 
 Open the .env file in a text editor and set the environment variables according to your local configuration. For example:
 
